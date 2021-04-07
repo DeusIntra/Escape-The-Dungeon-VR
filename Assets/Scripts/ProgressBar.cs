@@ -41,7 +41,7 @@ public class ProgressBar : MonoBehaviour
 
     public void StartFilling()
     {
-        if (player != null) transform.parent.LookAt(player.transform);
+        if (player != null) transform.parent.LookAt(Camera.main.transform); ;
         StopFilling();
         routine = StartCoroutine(StartFillingCoroutine());
     }
