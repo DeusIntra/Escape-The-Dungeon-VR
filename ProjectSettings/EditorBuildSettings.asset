@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prison.unity
     guid: bbf4314ad5763144b935d48d7c82a8fa
+  - enabled: 1
+    path: Assets/Scenes/Dungeon.unity
+    guid: 21a243c632509104aa8f8318e4b0e2b8
   m_configObjects: {}
