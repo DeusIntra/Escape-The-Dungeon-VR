@@ -1,37 +1,14 @@
 fileFormatVersion: 2
-guid: 490a85f865046404a92f11440184562e
+guid: 5fdf3a258d7d2324b984c3dc37572976
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: locked_icon
-    100002: move_location_icon
-    100004: switch_scenes_icon
-    100006: teleport_marker_icons
-    100008: teleport_marker_lookat_joint
-    100010: teleport_marker_mesh
-    100012: //RootNode
-    400000: locked_icon
-    400002: move_location_icon
-    400004: switch_scenes_icon
-    400006: teleport_marker_icons
-    400008: teleport_marker_lookat_joint
-    400010: teleport_marker_mesh
-    400012: //RootNode
-    2100000: TeleportPoint_Visible
-    2300000: locked_icon
-    2300002: move_location_icon
-    2300004: switch_scenes_icon
-    2300006: teleport_marker_mesh
-    3300000: locked_icon
-    3300002: move_location_icon
-    3300004: switch_scenes_icon
-    3300006: teleport_marker_mesh
-    4300000: teleport_marker_mesh
-    4300002: switch_scenes_icon
-    4300004: move_location_icon
-    4300006: locked_icon
-    7400000: Take 001
-    9500000: //RootNode
+    100000: //RootNode
+    400000: //RootNode
+    2100000: No Name
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: col_Fountain
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -69,8 +46,8 @@ ModelImporter:
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -84,8 +61,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -112,7 +89,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
