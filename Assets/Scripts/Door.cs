@@ -11,6 +11,7 @@ public class Door : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    [ContextMenu("Open")]
     public void Open()
     {
         animator.enabled = true;
