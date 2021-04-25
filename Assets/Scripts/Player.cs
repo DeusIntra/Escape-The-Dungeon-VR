@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     public GameObject rightObject;
     public GameObject leftObject;
+    public GameObject cauldronPrefab;
+    public GameObject filledCauldronPrefab;
 
     private bool hasRight = false;
     private bool hasLeft = false;
@@ -22,5 +24,18 @@ public class Player : MonoBehaviour
             leftObject.SetActive(true);
             hasLeft = true;
         }
+    }
+
+    public void TakeCauldron()
+    {
+        leftObject = cauldronPrefab;
+        Take(false);
+    }
+
+    public void FillCauldron()
+    {
+        leftObject.SetActive(false);
+        leftObject = filledCauldronPrefab;
+        Take(false);
     }
 }
