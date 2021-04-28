@@ -20,6 +20,6 @@ public class Gate : MonoBehaviour
 
     public void ActivateTeleports()
     {
-        teleports.SetActive(true);
+        teleports?.SetActive(true);
     }
 }

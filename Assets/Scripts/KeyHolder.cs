@@ -6,29 +6,32 @@ public class KeyHolder : MonoBehaviour
 {
     public List<GameObject> fire;
     public GameObject key;
+    public GameObject playerKey;
+    public SphereCollider door3;
 
-    private bool isFireOut = false;
-    private Player player;
-
-    private void Start()
-    {
-        player = FindObjectOfType<Player>();
-    }
+    private bool isOnFire = true;
     
     public void PutOutFire()
     {
-        // TODO проверка на воду
+        // проверка на огонь
+        if (isOnFire == false) return;
+
         foreach (var obj in fire)
         {
             obj.SetActive(false);
         }
-        isFireOut = true;
+
+        isOnFire = false;   
     }
 
     public void TakeKey()
     {
+        if (isOnFire) return;
+
         key.SetActive(false);
-        // TODO: дать игроку ключ
-        Debug.Log("TODO");
+        playerKey.SetActive(true);
+        door3.enabled = true;
+
+        GetComponent<SphereCollider>().enabled = false;
     }
 }
