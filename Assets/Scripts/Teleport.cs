@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class Teleport : MonoBehaviour
 {
     public string nextScene;
@@ -36,7 +35,5 @@ public class Teleport : MonoBehaviour
         Fadeout fadeout = FindObjectOfType<Fadeout>();
 
         fadeout.FadeOut();
-    }
-
-    
+    }    
 }

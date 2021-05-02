@@ -28,6 +28,11 @@ public class ProgressBar : MonoBehaviour
             eventTrigger = transform.parent.parent.gameObject.AddComponent<EventTrigger>();
         }
 
+        EventTrigger.Entry pointerClick = new EventTrigger.Entry();
+        pointerClick.eventID = EventTriggerType.PointerClick;
+        pointerClick.callback.AddListener((eventData) => { onBarFilled.Invoke(); });
+        eventTrigger.triggers.Add(pointerClick);
+
         EventTrigger.Entry pointerEnter = new EventTrigger.Entry();
         pointerEnter.eventID = EventTriggerType.PointerEnter;
         pointerEnter.callback.AddListener((eventData) => { StartFilling(); });

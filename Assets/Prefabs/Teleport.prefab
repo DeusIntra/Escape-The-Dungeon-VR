@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 500865691745109584}
   - component: {fileID: 4301068232799352048}
   - component: {fileID: 4657255395251813660}
-  - component: {fileID: 1658499435}
   m_Layer: 0
   m_Name: Teleport
   m_TagString: Untagged
@@ -64,35 +63,6 @@ MonoBehaviour:
   nextScene: 
   moveLocation: {fileID: 5062515123536209613}
   switchScenes: {fileID: 5062515123536209611}
---- !u!114 &1658499435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1849624499469557940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4657255395251813660}
-          m_MethodName: TeleportPlayer
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  delegates: []
 --- !u!1001 &548175732
 PrefabInstance:
   m_ObjectHideFlags: 0

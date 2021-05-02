@@ -7,6 +7,7 @@ public class KeyHolder : MonoBehaviour
     public List<GameObject> fire;
     public GameObject key;
     public GameObject playerKey;
+    public GameObject cauldron;
     public SphereCollider door3;
 
     private bool isOnFire = true;
@@ -20,6 +21,8 @@ public class KeyHolder : MonoBehaviour
         {
             obj.SetActive(false);
         }
+
+        cauldron.SetActive(false);
 
         isOnFire = false;   
     }
